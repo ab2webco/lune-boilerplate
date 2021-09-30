@@ -1,0 +1,38 @@
+*.log
+
+# Application
+wp-content/plugins/*
+!wp-content/plugins/.gitkeep
+wp-content/mu-plugins/*/
+wp-content/upgrade
+wp-content/uploads/*
+!wp-content/uploads/.gitkeep
+wp-content/languages/
+wp-content/themes/twentytwentyone/
+# WordPress
+wp
+.htaccess
+
+# WP-CLI
+db-sync
+sql-dump-*.sql
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# Node Package Manager
+node_modules
+
+# Vagrant
+bin
+.vagrant
+
+# MAC
+.DS_Store
+*.DS_Store

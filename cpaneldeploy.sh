@@ -1,4 +1,4 @@
-themeName="themename"
+themeName="nix"
 # Set variables
 ####################
 # Cpanel remote URL

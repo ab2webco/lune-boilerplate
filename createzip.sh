@@ -1,5 +1,5 @@
 # Your theme directory name (/wp-content/themes/yourtheme)
-themeName="themename"
+themeName="nix"
 ########################################
 
 ####################

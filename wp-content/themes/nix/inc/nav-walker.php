@@ -1,6 +1,8 @@
 <?php
 /**
- * Lune Navwalker
+ * Nix Navwalker
+ *
+ * @package Nix by Ab2Web
  */
 
 // Check if Class Exists.

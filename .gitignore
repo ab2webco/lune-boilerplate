@@ -8,6 +8,7 @@ wp-content/upgrade
 wp-content/uploads/*
 !wp-content/uploads/.gitkeep
 wp-content/languages/
+wp-content/lune-cache/
 wp-content/themes/twentytwentyone/
 # WordPress
 wp

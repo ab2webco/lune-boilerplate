@@ -1,0 +1,15 @@
+/* TEAM */
+	CEO: Fabian Altahona
+	linkedin: https://www.linkedin.com/in/fabolivar/
+
+	WordPress Lead: Fabian Altahona
+	Twitter: @fabolivar23
+
+/* THANKS */
+  Ab2Web, Koombea
+
+/* SITE */
+	Last update:2021/10/13
+	Language: Spanish / English
+	Doctype:HTML5
+	IDE: Visual Studio Code, WordPress, Figma

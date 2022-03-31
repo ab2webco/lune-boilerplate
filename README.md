@@ -19,16 +19,6 @@ Lune Boilerplate is a modern WordPress stack that helps you get started with the
 
 1. Download the latest release and setup.
 
-2. Copy `.env.example` to `.env` and update environment variables:
-  * `DB_NAME` - Database name
-  * `DB_USER` - Database user
-  * `DB_PASSWORD` - Database password
-  * `DB_HOST` - Database host
-  * `WP_ENV` - Set to environment (`development`, `staging`, `production`)
-  * `WP_HOME` - Full URL to WordPress home (https://example.dev)
-  * `AUTH_KEY`, `SECURE_AUTH_KEY`, `LOGGED_IN_KEY`, `NONCE_KEY`, `AUTH_SALT`, `SECURE_AUTH_SALT`, `LOGGED_IN_SALT`, `NONCE_SALT`
-    If you want to automatically generate the security keys you can search for an online salt generator (https://api.wordpress.org/secret-key/1.1/salt/)
-
 ## Starting the app
 1. You can start the app with Composer, this will launch the required containers:
 

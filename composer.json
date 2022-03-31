@@ -20,7 +20,11 @@
   },
   "config": {
     "optimize-autoloader": true,
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "allow-plugins": {
+      "composer/installers": true,
+      "johnpbloch/wordpress-core-installer": true
+    }
   },
   "repositories": [
     {
@@ -33,7 +37,8 @@
     "php": ">=7.1",
     "composer/installers": "^2.0.1",
     "vlucas/phpdotenv": "^3.6.7",
-    "johnpbloch/wordpress": ">=5.9.2",
+    "johnpbloch/wordpress-core": "@stable",
+		"johnpbloch/wordpress-core-installer": "^2.0",
     "oscarotero/env": "^1.2.0"
   },
   "require-dev": {
@@ -54,13 +59,5 @@
       ]
     },
     "wordpress-install-dir": "wp"
-  },
-  "scripts": {
-    "post-create-project-cmd": [
-      "php \"echo('Use: composer run-script copy-env');\""
-    ],
-    "copy-env": [
-      "php -r \"copy('.env.example', '.env');\"// Use: composer run-script copy-env"
-    ]
   }
 }

@@ -6,7 +6,7 @@
 	Twitter: @fabolivar23
 
 /* THANKS */
-  Ab2Web, Koombea
+  Ab2Web
 
 /* SITE */
 	Last update:2021/10/13

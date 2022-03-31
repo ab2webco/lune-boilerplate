@@ -18,7 +18,7 @@ $dotenv = Dotenv::create($root_dir);
 
 if (file_exists($root_dir . '/.env')) {
 		$dotenv->load();
-		$dotenv->required(['DB_NAME', 'DB_USER', 'DB_PASSWORD', 'WP_HOME', 'WP_SITEURL']);
+		$dotenv->required(['DBC_NAME', 'DB_USER', 'DB_PASSWORD', 'WPS_HOME', 'WP_SITEURL']);
 }
 
 /**
@@ -36,7 +36,7 @@ if (file_exists($env_config)) {
 /**
  * URLs
  */
-define('WP_HOME', env('WP_HOME'));
+define('WP_HOME', env('WPS_HOME'));
 define('WP_SITEURL', env('WP_SITEURL'));
 
 /**
@@ -50,7 +50,7 @@ define('WP_DEFAULT_THEME', CONTENT_DIR . '/themes');
 /**
  * DB settings
  */
-define('DB_NAME', env('DB_NAME'));
+define('DB_NAME', env('DBC_NAME'));
 define('DB_USER', env('DB_USER'));
 define('DB_PASSWORD', env('DB_PASSWORD'));
 define('DB_HOST', env('DB_HOST') ?: 'localhost');
@@ -61,14 +61,14 @@ $table_prefix = env('DB_PREFIX') ?: 'wp_';
 /**
  * Authentication Unique Keys and Salts
  */
-define('AUTH_KEY', env('AUTH_KEY'));
-define('SECURE_AUTH_KEY', env('SECURE_AUTH_KEY'));
-define('LOGGED_IN_KEY', env('LOGGED_IN_KEY'));
-define('NONCE_KEY', env('NONCE_KEY'));
-define('AUTH_SALT', env('AUTH_SALT'));
-define('SECURE_AUTH_SALT', env('SECURE_AUTH_SALT'));
-define('LOGGED_IN_SALT', env('LOGGED_IN_SALT'));
-define('NONCE_SALT', env('NONCE_SALT'));
+define('AUTH_KEY', env('WPC_AUTH_KEY'));
+define('SECURE_AUTH_KEY', env('WPC_SECURE_AUTH_KEY'));
+define('LOGGED_IN_KEY', env('WPC_LOGGED_IN_KEY'));
+define('NONCE_KEY', env('WPC_NONCE_KEY'));
+define('AUTH_SALT', env('WPC_AUTH_SALT'));
+define('SECURE_AUTH_SALT', env('WPC_SECURE_AUTH_SALT'));
+define('LOGGED_IN_SALT', env('WPC_LOGGED_IN_SALT'));
+define('NONCE_SALT', env('WPC_NONCE_SALT'));
 
 /**
  * Custom Settings

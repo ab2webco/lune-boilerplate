@@ -1,0 +1,47 @@
+input.boton_crear_gallery {
+    margin-right: 10px !important;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.grid {
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    column-gap: 20px;
+}
+
+.mb-miniatura-gallery {
+    min-width: 200px;
+    min-height: 120px;
+    margin-bottom: 20px;
+}
+
+.circle {
+    opacity: 0.5;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.mb-miniatura-gallery:hover .circle {
+    opacity: 1;
+    cursor: crosshair;
+}
+
+.circle-number {
+    font-size: 13px;
+    line-height: 1.5;
+    margin: auto;
+    display: inline-block;
+    font-weight: 700;
+}

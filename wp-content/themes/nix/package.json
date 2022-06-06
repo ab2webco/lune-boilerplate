@@ -79,6 +79,6 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "jquery-validation": "^1.19.2"
+    "jquery-validation": "^1.19.4"
   }
 }

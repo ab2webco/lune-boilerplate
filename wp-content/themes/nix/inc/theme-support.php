@@ -57,6 +57,14 @@ if ( ! function_exists( 'lune_theme_support' ) ) {
 	);
 
 	add_theme_support( 'custom-logo', $defaults );
+
+	function add_li_to_nav($items, $args) {
+		remove_filter('wp_nav_menu_items', 'add_li_to_nav', 10, 2);
+		$items = '<button class="close-navbar"><i class="ti-close"></i></button>'.$items;
+		return $items;
+	}
+	add_filter('wp_nav_menu_items', 'add_li_to_nav', 10, 2);
+
 }
 
 add_action('after_setup_theme','lune_theme_support');

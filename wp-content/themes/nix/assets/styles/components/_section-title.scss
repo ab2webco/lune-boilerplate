@@ -1,0 +1,91 @@
+.section-title {
+	text-align: center;
+	margin-bottom: 60px;
+
+	@include media-query(767px) {
+		margin-bottom: 50px;
+	}
+
+	> span {
+		font-family: $heading-font;
+		font-size: 16px;
+		font-size: calc-rem-value(16);
+		font-weight: 600;
+		color: $theme-primary-color;
+		text-transform: uppercase;
+		display: block;
+		margin-top: -0.25em;
+
+		@include media-query(991px) {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+		}
+	}
+
+	h2 {
+		font-size: 36px;
+		font-size: calc-rem-value(36);
+		margin: 0 0 0.36em;
+		text-transform: capitalize;
+
+		@include media-query(991px) {
+			font-size: 30px;
+			font-size: calc-rem-value(30);
+		}
+
+		@include media-query(767px) {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+}
+
+.section-title-s2 {
+	@extend .section-title;
+	text-align: left;
+
+	> span {
+		display: inline-block;
+		padding-right: 50px;
+		position: relative;
+
+		&:before {
+			content: "";
+			width: 40px;
+			height: 1px;
+			background-color: $theme-primary-color;
+			position: absolute;
+			right: 0;
+			bottom: 6px;
+		}
+
+	}
+}
+
+.section-title-s3 {
+	@extend .section-title-s2;
+
+	p {
+		margin-bottom: 2em;
+	}
+
+	a {
+		font-family: $heading-font;
+		font-weight: 600;
+		color: $theme-primary-color;
+	}
+
+	a:hover {
+		color: darken($theme-primary-color, 5%);
+	}
+
+	a i {
+		position: relative;
+		top: 2px;
+		left: 2px;
+	}
+}

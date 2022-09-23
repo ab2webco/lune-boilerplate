@@ -1,0 +1,104 @@
+/****************************************
+	service single sidebar
+****************************************/
+.service-sidebar {
+	@include media-query(991px) {
+		max-width: 300px;
+		margin-top: 80px;
+	}
+	> .widget + .widget {
+		margin-top: 60px;
+	}
+
+	/*** service-list-widget ***/
+	.service-list-widget {
+		ul {
+			font-family: $heading-font;
+			list-style: none;
+			border: 1px solid #e6e6e6;
+			border-bottom: 0;
+		}
+
+		ul li {
+			border-bottom: 1px solid #e6e6e6;
+		}
+
+		a {
+			font-weight: 600;
+			display: block;
+			color: #0a172b;
+			padding: 15px 24px;
+		}
+
+		a:hover,
+		.current a {
+			background-color: $theme-primary-color;
+			color: $white;
+		}
+	}
+
+
+	/*** download-widget ***/
+	.download-widget {
+		ul {
+			list-style: none;
+		}
+
+		ul > li + li {
+			margin-top: 5px;
+		}
+
+		ul a {
+			border: 2px solid $theme-primary-color;
+			color: #0a172b;
+			padding: 15px 25px;
+			font-weight: 500;
+			display: block;
+		}
+
+		ul i {
+			display: inline-block;
+			padding-right: 10px;
+			color: $theme-primary-color;
+		}
+
+		ul a:hover {
+			color: $theme-primary-color;
+		}
+	}
+
+
+	/*** contact-widget ***/
+	.contact-widget {
+		border: 2px solid $theme-primary-color;
+		padding: 45px 30px;
+
+		h4 {
+			font-size: 22px;
+			font-size: calc-rem-value(22);
+			font-weight: 600;
+			margin: 0 0 0.8em;
+			text-transform: capitalize;
+		}
+
+		ul li {
+			font-size: 14px;
+			font-size: calc-rem-value(14);
+			position: relative;
+			padding-left: 25px;
+
+			i {
+				position: absolute;
+				left: 0;
+				top: 3px;
+				color: $theme-primary-color;
+			}
+		}
+
+		ul > li + li {
+			margin-top: 12px;
+		}
+
+
+	}
+}

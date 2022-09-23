@@ -10,7 +10,7 @@ function asset_path( $filename, $get_dir = false ) {
 	static $manifest;
 
 	if (empty($manifest)) {
-		$manifest_path = get_stylesheet_directory() . '/dist/' . 'assets.json';
+		$manifest_path = get_stylesheet_directory() . '/dist/' . 'manifest.json';
 		$manifest = new luneAssets($manifest_path);
 	}
 

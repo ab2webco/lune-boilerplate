@@ -1,9 +1,7 @@
-import $ from 'jquery';
-// import 'bootstrap/js/dist/carousel';
-// import 'bootstrap/js/dist/collapse';
+// import $ from 'jquery';
 
-("use strict");
+// ('use strict');
 
-$(() => {
-  console.log("Loaded Blog Scripts");
-});
+// $(() => {
+//   console.log('Loaded Blog Scripts');
+// });

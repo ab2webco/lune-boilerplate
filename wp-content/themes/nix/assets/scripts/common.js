@@ -1,5 +1,4 @@
 import $ from 'jquery';
-import slick from 'slick-carousel';
 
 ('use strict');
 
@@ -115,19 +114,100 @@ $(() => {
     if ($(".hero-slider").length) {
         $(".hero-slider").slick({
             autoplay: true,
-            autoplaySpeed: 8000,
+            autoplaySpeed: 12000,
             arrows: true,
             prevArrow: '<button type="button" class="slick-prev">Previous</button>',
             nextArrow: '<button type="button" class="slick-next">Next</button>',
             dots: true,
             fade: true,
             cssEase: 'linear',
+            pauseOnHover:true
         });
     }
   }
 
   //Active Hero slider
   heroSlider();
+   /*------------------------------------------
+        = TESTIMONIALS SLIDER
+    -------------------------------------------*/
+    if($(".testimonials-slider".length)) {
+      $(".testimonials-slider").owlCarousel({
+          mouseDrag: false,
+          smartSpeed: 1500,
+          margin: 30,
+          loop:true,
+          items: 1
+      });
+  }
+
+
+  /*------------------------------------------
+      = PARTNERS SLIDER
+  -------------------------------------------*/
+  if ($(".partners-slider").length) {
+      $(".partners-slider").owlCarousel({
+          autoplay:true,
+          smartSpeed: 300,
+          margin: 30,
+          loop:true,
+          autoplayHoverPause:true,
+          dots: false,
+          responsive: {
+              0 : {
+                  items: 2
+              },
+
+              550 : {
+                  items: 3
+              },
+
+              992 : {
+                  items: 4
+              },
+
+              1200 : {
+                  items: 5
+              }
+          }
+      });
+  }
+
+
+  /*------------------------------------------
+      = PARTNERS SLIDER
+  -------------------------------------------*/
+  if ($(".services-slider").length) {
+      $(".services-slider").owlCarousel({
+          autoplay:true,
+          smartSpeed: 300,
+          margin: 30,
+          loop:true,
+          autoplayHoverPause:true,
+          nav: false,
+          responsive: {
+              0 : {
+                  items: 1
+              },
+
+              550 : {
+                  items: 2
+              },
+
+              992 : {
+                  items: 3
+              },
+
+              1200 : {
+                  items: 4
+              },
+
+              1600 : {
+                  items: 5
+              }
+          }
+      });
+  }
 
   /*------------------------------------------
         = STICKY HEADER

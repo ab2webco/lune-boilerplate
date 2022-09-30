@@ -1,7 +1,6 @@
 <?php
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit; ?>
-		<!-- Add your custom footer -->
 		<footer class="site-footer">
             <div class="upper-footer">
                 <div class="container">

@@ -4,9 +4,11 @@
 @import "helpers/mixins";
 
 //Vendors
-@import "vendors/bootstrap";
+@import "vendors/bootstrap"; // bootstrap 3
+// @import "vendors/bootstrap/bootstrap"; bootstrap 4
 @import "vendors/themify-icons";
 @import "vendors/flaticon";
+@import "vendors/owl-carousel";
 
 // base
 @import "base/base";
@@ -32,5 +34,14 @@
 @import "components/sticky-header";
 
 
+// page
 @import "page/home-default";
-
+@import "page/home-style2";
+@import "page/about";
+@import "page/contact";
+@import "page/service-single";
+@import "page/case-single";
+@import "page/blog";
+@import "page/blog-single";
+@import "page/error-404";
+@import "page/team";

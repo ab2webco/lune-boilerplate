@@ -7,7 +7,7 @@
     "blog": ["scripts/blog.js", "styles/blog.scss"],
     "common": ["scripts/common.js", "styles/common.scss"]
   },
-  "assets": ["images", "fonts"],
+  "assets": ["images", "fonts", "scripts/vendors"],
   "watch": "*.php",
   "proxy": "https://verticallink.dev",
   "serve": 3001,

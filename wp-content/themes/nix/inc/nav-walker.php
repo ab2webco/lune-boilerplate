@@ -382,7 +382,7 @@ if ( ! class_exists( 'Nix_Navwalker' ) ) :
 		public function add_schema_to_navbar_ul( $args ) {
 			$wrap = $args['items_wrap'];
 			if ( strpos( $wrap, 'SiteNavigationElement' ) === false ) {
-				$args['items_wrap'] = preg_replace( '/(>).*>?\%3\$s/', ' itemscope itemtype="http://www.schema.org/SiteNavigationElement"$0', $wrap );
+				$args['items_wrap'] = preg_replace( '/(>).*>?\%3\$s/', ' itemscope itemtype="https://www.schema.org/SiteNavigationElement"$0', $wrap );
 			}
 
 			return $args;

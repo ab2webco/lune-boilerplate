@@ -12,7 +12,7 @@ $image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' )[0
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="format-detection" content="telephone=no, date=no, address=no">
 		<link rel="author" href="<?php echo get_template_directory_uri(); ?>/humans.txt" />
-		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="profile" href="https://gmpg.org/xfn/11">
 		<link id="googleFonts" href="https://fonts.googleapis.com/css?family=Heebo:400,500|Montserrat:400,500,600,700&display=swap" rel="stylesheet" type="text/css">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 		<?php wp_head(); ?>
@@ -48,7 +48,6 @@ $image = wp_get_attachment_image_src( get_theme_mod( 'custom_logo' ), 'full' )[0
 			</div> <!-- end container -->
 		</div>
 		<!-- end topbar -->
-
 		<nav class="navigation navbar navbar-default original">
 			<div class="container">
 				<div class="navbar-header">

@@ -53,12 +53,13 @@ class nixSiteClass {
 	 * @return void
 	 */
 	public function load_assets() {
-		wp_enqueue_script( 'common-scripts', asset_path('common.js'), ['jquery'], null, true );
+		wp_enqueue_script( 'jquery-plugin-collection', asset_path('scripts/vendors/jquery-plugin-collection.js'), ['jquery'], null, true );
+		wp_enqueue_script( 'common-scripts', asset_path('common.js'), ['jquery', 'jquery-plugin-collection'], null, true );
 		wp_enqueue_style( 'theme-styles', asset_path('common.css'), false, null );
 
 		if ( is_page() ) {
 			wp_enqueue_script( 'page-scripts', asset_path('pages.js'), ['jquery'], null, true );
-			wp_enqueue_style( 'page-styles', asset_path('page.css'), ['theme-styles'], null );
+			wp_enqueue_style( 'page-styles', asset_path('pages.css'), ['theme-styles'], null );
 		}
 
 		if ( is_home() ) {

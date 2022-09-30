@@ -353,6 +353,10 @@
 		.slider-bg {
 			display: none;
 		}
+    &-background{
+      background-size: cover;
+      background-position: center;
+    }
 	}
 
 	.slide:focus {

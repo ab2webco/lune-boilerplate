@@ -44,7 +44,7 @@
 	.icon .fi:before {
 		font-size: 45px;
 		font-size: calc-rem-value(45);
-		color: $theme-primary-color;
+		color: $darkblue;
 
 		@include media-query(767px) {
 			font-size: 35px;
@@ -118,7 +118,7 @@
 		}
 
 		span {
-			color: $theme-primary-color;
+			color: $darkblue;
 		}
 	}
 
@@ -145,7 +145,7 @@
 			position: absolute;
 			left: 0;
 			top: 3px;
-			color: $theme-primary-color;
+			color: $darkblue;
 		}
 	}
 
@@ -165,7 +165,7 @@
 	}
 
 	.video-holder a {
-		background-color: $theme-primary-color;
+		background-color: $darkblue;
 		width: 55px;
 		height: 55px;
 		border-radius: 55px;
@@ -208,21 +208,21 @@
 
 	@-webkit-keyframes spineer {
 		from {
-			box-shadow: 0 0 0 0 transparentize($theme-primary-color, 0.7);
+			box-shadow: 0 0 0 0 transparentize($darkblue, 0.7);
 		}
 
 		to {
-			box-shadow: 0 0 0 15px transparentize($theme-primary-color, 0.7);
+			box-shadow: 0 0 0 15px transparentize($darkblue, 0.7);
 		}
 	}
 
 	@keyframes spineer {
 		from {
-			box-shadow: 0 0 0 0 transparentize($theme-primary-color, 0.7);
+			box-shadow: 0 0 0 0 transparentize($darkblue, 0.7);
 		}
 
 		to {
-			box-shadow: 0 0 0 15px transparentize($theme-primary-color, 0.7);
+			box-shadow: 0 0 0 15px transparentize($darkblue, 0.7);
 		}
 	}
 }
@@ -253,7 +253,7 @@
 	}
 
 	.service-grids > .grid:nth-child(even) {
-		background-color: transparentize($theme-primary-color, 0.9);
+		background-color: transparentize($darkblue, 0.9);
 	}
 
 	.count {
@@ -261,7 +261,7 @@
 		font-size: 36px;
 		font-size: calc-rem-value(36);
 		font-weight: bold;
-		color: transparentize($theme-primary-color, 0.7);
+		color: transparentize($darkblue, 0.7);
 
 		@include media-query(1199px) {
 			font-size: 30px;
@@ -296,7 +296,7 @@
 	}
 
 	.grid h3 a:hover {
-		color: $theme-primary-color;
+		color: $darkblue;
 	}
 }
 
@@ -320,8 +320,8 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		background: -webkit-linear-gradient(left, darken($theme-primary-color, 40%) 40%, transparent);
-		background: linear-gradient(left, darken($theme-primary-color, 40%) 40%, transparent);
+		background: -webkit-linear-gradient(left, darken($darkblue, 40%) 40%, transparent);
+		background: linear-gradient(left, darken($darkblue, 40%) 40%, transparent);
 	}
 
 	h3 {
@@ -384,7 +384,7 @@
 		i {
 			display: inline-block;
 			padding-left: 5px;
-			color: $theme-primary-color;
+			color: $darkblue;
 		}
 	}
 }
@@ -435,7 +435,7 @@
 	.grid .details > span {
 		font-size: 14px;
 		font-size: calc-rem-value(14);
-		color: $theme-primary-color;
+		color: $darkblue;
 		text-transform: uppercase;
 
 		@include media-query(767px) {
@@ -462,7 +462,7 @@
 	}
 
 	.grid h3 a:hover {
-		color: $theme-primary-color;
+		color: $darkblue;
 	}
 
 	.grid .img-holder {
@@ -470,7 +470,7 @@
 
 		&:before {
 			content: "";
-			background-color: transparentize($theme-primary-color, 0.1);
+			background-color: transparentize($darkblue, 0.1);
 			width: 100%;
 			height: 100%;
 			position: absolute;
@@ -582,7 +582,7 @@
 		font-size: 18px;
 		font-size: calc-rem-value(18);
 		font-weight: normal;
-		color: $theme-primary-color;
+		color: $darkblue;
 		margin: 1em 0 0.2em;
 	}
 
@@ -617,12 +617,12 @@
 	}
 
 	.owl-dots .owl-dot.active {
-		border: 1px solid $theme-primary-color;
+		border: 1px solid $darkblue;
 	}
 
 	.owl-dots .owl-dot.active span,
 	.owl-dots .owl-dot:hover span {
-		background-color: $theme-primary-color;
+		background-color: $darkblue;
 	}
 }
 
@@ -754,7 +754,7 @@
 		}
 
 		.icon {
-			background-color: $theme-primary-color;
+			background-color: $darkblue;
 			width: 60px;
 			height: 60px;
 			line-height: 70px;
@@ -841,7 +841,7 @@
 	.grid p {
 		font-size: 14px;
 		font-size: calc-rem-value(14);
-		color: $theme-primary-color;
+		color: $darkblue;
 		margin: 0;
 
 		@include media-query(991px) {
@@ -924,7 +924,7 @@
 	}
 
 	.entry-meta li i {
-		color: $theme-primary-color;
+		color: $darkblue;
 		display: inline-block;
 		padding-right: 5px;
 	}
@@ -946,7 +946,7 @@
 		color: $heading-color;
 
 		&:hover {
-			color: $theme-primary-color;
+			color: $darkblue;
 		}
 	}
 }

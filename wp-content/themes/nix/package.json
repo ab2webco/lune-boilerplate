@@ -10,7 +10,7 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.5%",
       "not dead",
       "not op_mini all"
     ],
@@ -26,7 +26,6 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
-    "jquery-validation": "^1.19.4",
-    "slick-carousel": "^1.8.1"
+    "jquery-validation": "^1.19.4"
   }
 }

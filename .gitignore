@@ -38,3 +38,7 @@ bin
 # MAC
 .DS_Store
 *.DS_Store
+
+.budfiles
+wp-content/themes/nix/.budfiles
+wp-content/mu-plugins/wp-migrate-db-pro-compatibility.php

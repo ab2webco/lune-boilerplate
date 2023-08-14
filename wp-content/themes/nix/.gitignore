@@ -1,0 +1,15 @@
+/vendor/
+
+dist
+bower_components
+npm-debug.log
+
+
+# MAC
+.DS_Store
+*.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node Package Manager
+node_modules

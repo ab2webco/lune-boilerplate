@@ -1,0 +1,84 @@
+/*--------------------------------------------------------------
+	#about page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#3.1	about-section-s2
+--------------------------------------------------------------*/
+.about-section-s2 {
+	@extend .about-section;
+
+	.video-holder {
+		position: relative;
+
+		&:before {
+			content: "";
+			@include overlay(transparentize($black, 0.5));
+		}
+
+		@include media-query(991px) {
+			max-width: 570px;
+			margin: 60px 0 0;
+		}
+
+		.fi:before {
+			font-size: 70px;
+			font-size: calc-rem-value(70);
+			color: $theme-primary-color;
+
+			@include media-query(767px) {
+				font-size: 50px;
+				font-size: calc-rem-value(50);
+			}
+		}
+
+		a {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			@include center-by-translating();
+		}
+	}
+}
+
+
+/*--------------------------------------------------------------
+#3.2	mission-vision-section
+--------------------------------------------------------------*/
+.mission-vision-section {
+	padding-top: 0;
+	padding-bottom: 90px;
+	margin-top: -25px;
+
+	@include media-query(991px) {
+		padding-bottom: 70px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 50px;
+	}
+
+	.mission-vision {
+		> .col + .col {
+			@include media-query(991px) {
+				margin-top: 40px;
+			}
+		}
+
+		h3 {
+			font-size: 25px;
+			font-size: calc-rem-value(25);
+			margin: 0 0 0.6em;
+			text-transform: capitalize;
+
+			@include media-query(991px) {
+				font-size: 22px;
+				font-size: calc-rem-value(22);
+			}
+
+			@include media-query(767px) {
+				font-size: 20px;
+				font-size: calc-rem-value(20);
+			}
+		}
+	}
+}

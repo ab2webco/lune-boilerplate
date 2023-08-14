@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------
+	#team page
+----------------------------------------------------------------*/
+/*--------------------------------------------------------------
+#10.0 	team-page-section
+----------------------------------------------------------------*/
+.team-page-section {
+	@extend .team-section;
+	padding-bottom: 90px;
+
+	@include media-query(991px) {
+		padding-bottom: 70px;
+	}
+
+	@include media-query(767px) {
+		padding-bottom: 60px;
+	}
+
+	.team-grids .grid {
+		margin-bottom: 30px;
+	}
+}

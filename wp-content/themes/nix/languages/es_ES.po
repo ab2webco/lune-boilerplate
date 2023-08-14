@@ -1,0 +1,41 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Nix\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-10-01 02:09+0000\n"
+"PO-Revision-Date: 2021-10-01 02:17+0000\n"
+"Last-Translator: Fabian Altahona\n"
+"Language-Team: Spanish (Spain)\n"
+"Language: es_ES\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.5.4; wp-5.8.1\n"
+"X-Domain: nix"
+
+#. Author of the theme
+msgid "Ab2Web Team"
+msgstr "Equipo Ab2Web"
+
+#: functions.php:10
+#, php-format
+msgid "Error locating %s for inclusion"
+msgstr "Error en la inclusión de %s"
+
+#. URI of the theme
+msgid "https://www.lunebuilder.com"
+msgstr "https://www.lunebuilder.com"
+
+#. Name of the theme
+msgid "Nix"
+msgstr "Nix"
+
+#: index.php:12
+msgid "Sorry, no posts matched your criteria."
+msgstr "Lo siento, no hay mensajes que coincidan con sus criterios."
+
+#. Description of the theme
+msgid "The fastest Lune WordPress theme"
+msgstr "El tema de WordPress más rápido de Ab2Web"

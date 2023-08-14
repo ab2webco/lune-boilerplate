@@ -1,0 +1,36 @@
+// helpers
+@import "helpers/variables";
+@import "helpers/functions";
+@import "helpers/mixins";
+
+//Vendors
+@import "vendors/bootstrap";
+@import "vendors/themify-icons";
+@import "vendors/flaticon";
+
+// base
+@import "base/base";
+
+
+// components
+@import "components/section-title";
+@import "components/buttons";
+@import "components/form";
+@import "components/page-title";
+@import "components/preloader";
+@import "components/service-single-sidebar";
+@import "components/blog-sidebar";
+@import "components/pagination";
+@import "components/accordion";
+
+// layout
+@import "layout/header";
+@import "layout/hero-slider";
+@import "layout/footer";
+
+// components
+@import "components/sticky-header";
+
+
+@import "page/home-default";
+

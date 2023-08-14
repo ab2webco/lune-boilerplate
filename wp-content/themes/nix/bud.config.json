@@ -1,0 +1,18 @@
+{
+  "setPath": {
+    "@src": "assets"
+  },
+  "entry": {
+    "pages": ["scripts/page.js",  "styles/page.scss"],
+    "blog": ["scripts/blog.js", "styles/blog.scss"],
+    "common": ["scripts/common.js", "styles/common.scss"]
+  },
+  "assets": ["images", "fonts"],
+  "watch": "*.php",
+  "proxy": "https://verticallink.dev",
+  "serve": 3001,
+  "devtool": true,
+  "externals": {
+    "jquery": "jQuery"
+  }
+}

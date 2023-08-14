@@ -20,27 +20,6 @@ tempDeployGitBranch="wpedeployscript/${currentLocalGitBranch}"
 # KWB themes directory
 ThemesDirectory="${presentWorkingDirectory}/wp-content/themes/"
 
-####################
-# Perform checks before running script
-####################
-
-# Git checks
-####################
-# Halt if there are uncommitted files
-if [[ -n $(git status -s) ]]; then
-  echo -e "[\033[31mERROR\e[0m] Found uncommitted files on current branch \"$currentLocalGitBranch\".\n        Review and commit changes to continue."
-  git status
-  exit 1
-fi
-
-# Check if specified remote exist
-git ls-remote "$wpengineRemoteName" &> /dev/null
-if [ "$?" -ne 0 ]; then
-  echo -e "[\033[31mERROR\e[0m] Unknown git remote \"$wpengineRemoteName\"\n"
-  echo "Available remotes:"
-  git remote -v
-  exit 1
-fi
 
 # Directory checks
 ####################
@@ -58,9 +37,6 @@ fi
 # Checkout new temporary branch
 echo "Preparing theme on branch ${tempDeployGitBranch}..."
 git checkout -b "$tempDeployGitBranch" &> /dev/null
-
-# Run composer
-pilothouse composer install
 
 # WPE-friendly gitignore
 rm .gitignore &> /dev/null

@@ -1,7 +1,7 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 
-// ('use strict');
+('use strict');
 
-// $(() => {
-//   console.log('Loaded Blog Scripts');
-// });
+$(() => {
+  console.log('Loaded Blog Scripts');
+});

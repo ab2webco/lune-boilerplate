@@ -1,8 +1,8 @@
-// import $ from 'jquery';
+import $ from 'jquery';
 
-// ('use strict');
+('use strict');
 
-// $(() => {
-//   console.log('Loaded Page Scripts');
+$(() => {
+  console.log('Loaded Page Scripts');
 
-// });
+});

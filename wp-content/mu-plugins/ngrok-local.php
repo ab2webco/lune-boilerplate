@@ -9,29 +9,29 @@
  * License: GPLv2+
  */
 
-add_action("template_redirect", "start_buffer");
-add_action("shutdown", "end_buffer", 999);
+// add_action("template_redirect", "start_buffer");
+// add_action("shutdown", "end_buffer", 999);
 
-function filter_buffer($buffer) {
-	$buffer = replace_insecure_links($buffer);
-	return $buffer;
-}
-function start_buffer(){
-	ob_start("filter_buffer");
-}
+// function filter_buffer($buffer) {
+// 	$buffer = replace_insecure_links($buffer);
+// 	return $buffer;
+// }
+// function start_buffer(){
+// 	ob_start("filter_buffer");
+// }
 
-function end_buffer(){
-	if (ob_get_length()) ob_end_flush();
-}
+// function end_buffer(){
+// 	if (ob_get_length()) ob_end_flush();
+// }
 
-function replace_insecure_links($str) {
+// function replace_insecure_links($str) {
 
-	$str = str_replace ( array( home_url() . '/' ) , array("/", "/"), $str);
-	return apply_filters("rsssl_fixer_output", $str);
+// 	$str = str_replace ( array( home_url() . '/' ) , array("/", "/"), $str);
+// 	return apply_filters("rsssl_fixer_output", $str);
 
-}
+// }
 
-function add_cors_http_header(){
-	header("Access-Control-Allow-Origin: *");
-}
-add_action('init','add_cors_http_header');
+// function add_cors_http_header(){
+// 	header("Access-Control-Allow-Origin: *");
+// }
+// add_action('init','add_cors_http_header');
